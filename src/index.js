@@ -1,5 +1,5 @@
-import HotelDatePicker from './DatePicker/HotelDatePicker.vue'
-import css from './assets/scss/index.scss'
+import xuichart from './chart/xuichart.js'
+import normal from './chart/theme/normal'
 
-export default HotelDatePicker
-export { css }
+export default xuichart
+export { normal }
