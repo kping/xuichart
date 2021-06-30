@@ -1,0 +1,189 @@
+// 系统用到的工具函数
+// 阴影
+.panel-shadow(){
+    box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+}
+.panel-lightShadow(){
+    box-shadow: 0 0 7px rgba(0, 0, 0, .05);
+}
+.link-default(@color, @hover){
+    color: @color;
+    &:hover{
+        color: @hover;
+        text-decoration: underline;
+    }
+}
+// 横向渐变色
+.horizontal-bg(@start, @end){
+    background-image: -webkit-linear-gradient(right, @start, @end 100%);
+    background-image: -moz-linear-gradient(right, @start, @end 100%);
+    background-image: -o-linear-gradient(right, @start, @end 100%);
+    background-image: -ms-linear-gradient(right, @start, @end 100%);
+    background-image: linear-gradient(to right, @start, @end 100%);
+}
+// 纵向向渐变色
+.vertical-bg(@start, @end){
+    background-image: -webkit-linear-gradient(bottom, @start, @end 100%);
+    background-image: -moz-linear-gradient(bottom, @start, @end 100%);
+    background-image: -o-linear-gradient(bottom, @start, @end 100%);
+    background-image: -ms-linear-gradient(bottom, @start, @end 100%);
+    background-image: linear-gradient(to bottom, @start, @end 100%);
+}
+// 鼠标划过线条动画
+.line-animation(@color){
+    &:after{
+        content: "";
+        height: 3px;
+        position: absolute;
+        left: 0;
+        width: 0;
+        bottom: 0;
+        background: transparent;
+        transition: .3s all ease;
+    }
+    &:hover{
+        &:after{
+            width: 100%;
+            background: @color;
+        }
+    }
+}
+// 箭头
+.arrow-right-fill(@color, @width1, @width2){
+    border: @width1 solid transparent;
+    border-left: @width2 solid @color;
+    width: 0;
+    height: 0px;
+    display: inline-block;
+}
+// 信息总览面板
+.info-overview(){
+    display: flex;
+    .overview-item{
+      margin-right: 10px;
+      background: #fafafa;
+      padding: 12px;
+      box-sizing: border-box;
+      flex: 1;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .overview-item-top{
+      display: flex;
+      align-items: center;
+      // padding-bottom: 15px;
+      // margin-bottom: 10px;
+      // border-bottom: 1px solid #ebeef5;
+    }
+    .overview-item-bottom{
+      border-top: 1px solid #ebeef5;
+      padding-top: 8px;
+      margin-top: 12px;
+      margin-bottom: -5px;
+    }
+    // 预览图标背景
+    .blueBg{background: #6a89e2;}
+    .lightBlueBg{background: #42abfa;}
+    .greenBg{background: #5cc970;}
+    .yellowBg{background: #ffd351;}
+    .orangeBg{background: #ff8e43;}
+    .purpleBg{background: #b17dc7;}
+    .lightPurpleBg{background: #9987ec;}
+    .icon-wrapper{
+    //   flex-basis: 48px;
+    //   height: 48px;
+      flex-basis: 42px;
+      height: 42px;
+      border-radius: 5px;
+    //   font-weight: bold;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .iconfont{
+        font-size: 30px;
+        color: #fff;
+        &.iconbaifenhao{
+            font-size: 24px;
+        }
+      }
+    }
+    
+    .overview-content{
+      .index{
+        // font-weight: bold;
+      }
+      .num{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-right: 3px;
+      }
+    }
+    .index-val{
+      display: flex;
+      align-items: flex-end;
+      .unit{
+        position: relative;
+        bottom: 2px;
+      }
+    }
+    .compare{
+      display: flex;
+      // justify-content: space-between;
+      &:first-child{
+        margin-bottom: 5px;
+      }
+    }
+    .compare-item{
+      width: 50%;
+      .iconfont{
+        font-size: 24px;
+      }
+    }
+}
+// 信息总览面板-响应式处理
+.info-overview-media(){
+    .overview-item-top{
+        display: flex;
+        align-items: center;
+        // padding-bottom: 10px;
+        // margin-bottom: 10px;
+    }
+    .icon-wrapper{
+        flex-basis: 42px;
+        height: 42px;
+        margin-right: 5px;
+    }
+    .compare{
+        // flex-direction: column;
+        font-size: 12px;
+    }
+    .overview-content{
+        // .index{
+        //   font-weight: bold;
+        // }
+        .num{
+          font-size: 16px;
+          margin-right:2px;
+        }
+        .index-val{
+            align-items: center;
+        }
+        .unit{
+          font-size: 12px;
+          position: inherit;
+        }
+    }
+}
+// input placeholder
+.placeholder(){
+  &:-moz-placeholder {
+      color: rgba(255, 255, 255, .5);
+      opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: rgba(255, 255, 255, .5); } // Internet Explorer 10+
+  &:-webkit-input-placeholder  { color: rgba(255, 255, 255, .5); } // Safari and Chrome
+}

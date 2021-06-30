@@ -63,6 +63,16 @@ $extra-small-screen: '(max-width: 23em)';
 /* =============================================================
 * BASE STYLES
 * ============================================================*/
+.main-wrapper {
+  display: flex;
 
+  .main-sider {
+    width: 300px;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+}
 
 

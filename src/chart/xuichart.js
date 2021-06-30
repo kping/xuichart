@@ -5,11 +5,13 @@ import chartUtil from './realize/chartUtil'
 import LineBarChart from './realize/lineBarChart'
 import PieChart from './realize/pieChart'
 import ScatterChart from './realize/scatterChart'
-import normal from './theme/normal'
+import normalTheme from './theme/normalTheme'
+import macaronsTheme from './theme/macaronsTheme'
 
 export default {
-  themes:{
-    normal
+  theme: {
+    normalTheme,
+    macaronsTheme,
   },
   /**
    * 通用的调用，默认类型是line

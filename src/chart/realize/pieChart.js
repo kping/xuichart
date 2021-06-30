@@ -14,7 +14,7 @@ class PieChart extends BaseChart {
       data: []
     }
     if (this.series.length > 0) {
-      this.series[0].list.forEach(item => {
+      this.series[0].data.forEach(item => {
         legend.data.push(item.name)
       })
     }
@@ -29,25 +29,23 @@ class PieChart extends BaseChart {
 
   getLabelLine(sery, unit) {
     const self = this
-    if (sery.showLabelLine) {
+    if (this.options.showLabelLine || sery.showLabelLine) {
       return {
         avoidLabelOverlap: true,
         label: {
           show: true,
           formatter: function (data) {
-            return self.getItemLabel(data) + '\n'
+            return self.getItemLabel(data)
           },
-          lineHeight: 22,
           color: '#888',
-          fontSize: 12,
-          padding: [10, -95],
+          // fontSize: 12,
           align: 'left'
         },
-        labelLine: {
+        /*labelLine: {
           show: true,
           length: 10,
           length2: 90
-        },
+        },*/
       }
     } else {
       return {
@@ -69,7 +67,7 @@ class PieChart extends BaseChart {
     if (unit === '%') {
       return data.name + '：' + data.value + unit
     } else {
-      return data.name + '：' + data.value + unit + ' (' + this.getFixedData(data.percent) + '%)'
+      return data.name + '：' + data.value + unit + '\n (' + this.getFixedData(data.percent) + '%)'
     }
   }
 
@@ -125,7 +123,7 @@ class PieChart extends BaseChart {
       unit = this.options.unit
     }
     this.series.forEach(item => {
-      let {name, list, ...option} = item
+      let {name, data, ...option} = item
       let sery = {
         name: name,
         type: 'pie',
@@ -134,7 +132,7 @@ class PieChart extends BaseChart {
         ...option,
         data: [],
       }
-      list.forEach(item => {
+      data.forEach(item => {
         sery.data.push(item)
       })
       let labelLineOption = this.getLabelLine(sery, unit)

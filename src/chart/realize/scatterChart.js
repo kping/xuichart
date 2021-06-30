@@ -45,12 +45,12 @@ class ScatterChart extends BaseChart {
   getSeriesOption() {
     let series = []
     this.series.forEach(item => {
-      let {list, ...otherParams} = item
+      let {data, ...otherParams} = item
       let sery = {
         data: [],
         ...otherParams,
       }
-      list.forEach(subItem => {
+      data.forEach(subItem => {
         if (subItem.value instanceof Array) {//如果是数组
           sery.data.push({
             value: subItem.value

@@ -413,7 +413,12 @@ export default {
             "emphasis": {
                 "borderColor": "#666666"
             }
-        }
+        },
+      "feature":{
+          "saveAsImage":{
+            "backgroundColor": '#FFF'
+          }
+      }
     },
     "legend": {
         "textStyle": {

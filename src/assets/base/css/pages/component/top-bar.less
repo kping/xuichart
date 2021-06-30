@@ -1,0 +1,105 @@
+// 头部区域
+.c-top-wrapper{
+    // background: #224396;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1f49b5+0,2a53b7+50,3761bd+100 */
+    // background: rgb(31,73,181); /* Old browsers */
+    // background: -moz-linear-gradient(top,  rgba(31,73,181,1) 0%, rgba(42,83,183,1) 50%, rgba(55,97,189,1) 100%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top,  rgba(31,73,181,1) 0%,rgba(42,83,183,1) 50%,rgba(55,97,189,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(to bottom,  rgba(31,73,181,1) 0%,rgba(42,83,183,1) 50%,rgba(55,97,189,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f49b5', endColorstr='#3761bd',GradientType=0 ); /* IE6-9 */
+    background: #fff;
+    box-shadow: 0 0 0 1px rgb(61 119 180 / 12%), 0 8px 16px 0 rgb(91 139 199 / 24%);
+}
+.c-top-bar{
+    height: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .15rem;
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .logo-wrapper{
+        a{
+            display: flex;
+            align-items: center;
+            color: @gray-dark;
+        }
+        .sys-logo{
+            height: 42px;
+            width: 42px;
+            margin-right: 12px;
+            background: url('@{sys-logo}') no-repeat left top;
+        }
+        .sys-name{
+            font-size: .20rem;
+            // font-weight: bold;
+            // margin-top: -.04rem;
+            letter-spacing: 1.5px;
+        }
+        .with-title{
+            align-self: flex-end;
+            margin-left: 80px;
+            font-size: 17px;
+            margin-bottom: 3px;
+            letter-spacing: 2px;
+        }
+    }
+    // 搜索区域
+    .c-search-box{
+        margin-right: auto;
+        height: .34rem;
+        padding: 0 .1rem 0 .14rem;
+        margin-left: .5rem;
+        .keywords{
+            width: 2.5rem;
+            padding: 0;
+        }
+        .smart-search-wrapper{
+            top: .33rem;
+            right: .37rem;
+        }
+        .keywords-del{
+            font-size: .25rem;
+            width: auto;
+        }
+        .search-btn{
+            // padding-left: .1rem;
+            // font-size: .20rem;
+            // // color: rgba(255,255,255,0.5);
+            // background: transparent;
+            // width: auto;
+        }
+        .composite-select{
+            margin-right: 10px;
+            margin-left: -15px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .select-mock{
+            border: transparent;
+            border-radius: 30px 0 0 30px;
+            background: transparent;
+            min-width: 75px;
+            &:after{
+                line-height: 1;
+            }
+            .selected-item{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+            .select-list{
+                left: 3px;
+                top: 31px;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,422 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors 　　Lidelin
+ * @date    　　2019-08-15
+ * @description 登录样式
+ */
+@import "../variables.less";
+html,body{
+	height: 100%;
+	// overflow: hidden;
+}
+.login-wrapper{
+	height: 6.22rem;
+	position: relative;
+	margin: 0 auto;
+	// background: url(../../../images/portal/login-bg.png) no-repeat center top;
+	&:before{
+		content: "";
+		display: table;
+	}
+	.copyRight{
+		text-align: center;
+		color: #333;
+		line-height: 1.5;
+		padding: 20px 0;
+		position: inherit;
+		background: transparent;
+	}
+	.el-input__inner{
+		height: 52px;
+		line-height: 52px;
+	}
+}
+.login-wrapper-inner{
+	width: 12.8rem;
+	margin: 120px auto 0;
+	.logo-wrapper{
+		display: flex;
+		align-items: center;
+		color: #fff;
+		justify-content: center;
+		margin-bottom: 32px;
+	}
+	.sys-logo {
+		height: .43rem;
+		margin-right: 12px;
+	}
+	.sys-name {
+		font-size: .26rem;
+		font-weight: bold;
+		margin-top: -0.04rem;
+		letter-spacing: 1.5px;
+	}
+}
+.loginBox-wrapper{
+	border-radius: .06rem;
+	// background: #fff url(../../../images/portal/login-box-bg.jpg) no-repeat left top;
+	height: 580px;
+	margin-bottom: 1rem;
+	box-shadow: 0 50px 90px -30px rgba(64,117,203,.8);
+	position: relative;
+	background: #ebf4ff;
+}
+.loginBox{
+	@blue-start:              #3862d8; // 蓝色渐变开始
+	@blue-end:                #2a72eb; // 蓝色渐变结束
+	background: #fff;
+	width: 530px;
+	height: 580px;
+	position: absolute;
+	z-index: 10;
+	border-radius: .06rem 0 0 .06rem;
+	left: 0;
+	&.enterprise{
+		height: 4.55rem;
+	}
+	.logo{
+		position: absolute;
+		left: 50%;
+		top: 50px;
+		transform: translate(-50%, 0);
+		margin: 0;
+		display: flex;
+		align-items: center;
+		.logo-icon{
+			height: 42px;
+			width: 42px;
+			margin-right: 12px;
+			background: url(../../../images/sys-logo-sm.png);
+		}
+		.logo-name{
+			font-size: 22px;
+		}
+	}
+	h2{
+		color: #434343;
+		padding: .30rem .28rem;
+		font-size: .18rem;
+	}
+	.login-item-content{
+		padding: 0 108px;
+		position: relative;
+		.login-step{
+			padding-top: 25px;
+			text-align: center;
+		}
+		.login-code{
+			width: 180px;
+			height: 180px;
+		}
+		.app-tips{
+			margin-top: 20px;
+			em{
+				color: @brand-primary;
+				margin: 0 3px;
+			}
+		}
+		.login-head-image{
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			color: @brand-primary;
+		}
+		.login-name{
+			font-size: 16px;
+			color: @brand-primary;
+			margin-top: 15px;
+		}
+		.state-tips-wrapper{
+			margin-top: 40px;
+			p{
+				&:last-child{
+					margin-top: 25px;
+					color: @brand-primary;
+				}
+			}
+		}
+		&.msg-login{
+			margin-top: 50px;
+			ul{
+				margin-bottom: 23px;
+				padding-bottom: 20px;
+				li{
+					margin-bottom: 25px;
+				}
+			}
+			.warning{
+				bottom: 127px;
+			}
+		}
+	}
+	ul{
+		// margin-bottom: .22rem;
+		// padding-bottom: .36rem;
+		// border-bottom: 1px dashed #dddee1;
+	}
+	li{
+		border: 1px solid #cbcbcb;
+		margin-bottom: .15rem;
+		height: .43rem;
+		background-color: #fff;
+		border-radius: .05rem;
+		&.qrInputBox{
+			width: 1.58rem;
+			float: left;
+			input{
+				width: 90%;
+				margin-left: .05rem;
+			}
+		}
+		&.qrNub{
+			float: right;
+			width: 1.16rem;
+			line-height: .36rem;
+			font-size: .24rem;
+			border: none;
+			text-align: center;
+			font-family: Constantia,Georgia, Geneva, Arial, Helvetica, sans-serif;
+		}
+		&.noMargin{
+			margin-bottom: 0;
+		}
+	}
+	li{
+		&.active{
+			border: 1px solid @brand-primary;
+			box-shadow:  0 0 0 2px fade(@brand-primary , 30);
+		}
+    }
+    .btn{
+		background-image: -webkit-linear-gradient(right, @blue-start, @blue-end 100%);
+		background-image: -moz-linear-gradient(right, @blue-start, @blue-end 100%);
+		background-image: -o-linear-gradient(right, @blue-start, @blue-end 100%);
+		background-image: -ms-linear-gradient(right, @blue-start, @blue-end 100%);
+        background-image: linear-gradient(to right, @blue-start, @blue-end 100%);
+		&:hover{
+			background: @blue-end;
+		}
+	}
+	// .border-radius();
+	.userIcon,.pwdIcon,.qrCodeIcon,.idIcon,.phoneIcon{
+		width: .42rem;
+		height: .31rem;
+		// background: url(../../../images/common/loginIcon.png) no-repeat;
+		margin-top: .06rem;
+		margin-left: .04rem;
+		float: left;
+	}
+	.pwdIcon{
+		background-position: 0 -31px;
+	}
+	.qrCodeIcon{
+		background-position: 0 -62px;
+	}
+	.idIcon{
+		background-position: 0 -62px;
+	}
+	.phoneIcon{
+		background-position: 0 -93px;
+	}
+	input{
+		width: 81%;
+		padding: 0 0 0 .08rem;
+		font-size: .14rem;
+		height: .43rem;
+		line-height: .43rem;
+		border: none;
+		float: left;
+		background: transparent;
+		&:focus{
+			outline: none;
+		}
+	}
+	.btn{
+		display: block;
+		height: .56rem;
+		line-height: .56rem;
+		color: #fff;
+		text-align: center;
+		// width: 290rem;
+		cursor: pointer;
+		font-size: .18rem;
+		letter-spacing: .02rem;
+		border-radius: .08rem;
+		text-decoration: none;
+		padding: 0;
+		border: none;
+		&:hover{
+			background: #227ddd;
+		}
+	}
+	// .box-shadow(0 2px rgba(0,0,0,.2));
+	.warning{
+		position: absolute;
+		bottom: -.46rem;
+		left: 108px;
+		right: 108px;
+		height: .30rem;
+		line-height: .30rem;
+		// background: rgba(255,73,73,.15);
+		p{
+			padding: 0 .10rem;
+			border-radius: .03rem;
+		}
+	}
+	// 下载
+	.download-wrapper{
+		position: absolute;
+		bottom: -75px;
+		left: 0;
+		right: 0;
+		.download-btn{
+			display: block;
+			height: 44px;
+			line-height: 44px;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			background: rgba(255,255,255,.25);
+			border-radius: 6px;
+			&:hover{
+				background: rgba(255,255,255,.15);
+			}
+		}
+		.download-code-wrapper{
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 75px;
+			height: 300px;
+			box-sizing: border-box;
+			padding-top: 45px;
+			background: #fff;
+			border-radius: 6px;
+			display: none;
+			-webkit-box-shadow: 0 0 10px rgba(0,0,0,.25);
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,.25);
+			box-shadow: 0 0 10px rgba(0,0,0,.25);
+			text-align: center;
+			&::before{
+				content: "";
+				position: absolute;
+				bottom: -7px;
+				left: 50%;
+				padding: 1em;
+				background: inherit;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				margin-left: -14px;
+			}
+		}
+		.download-code{
+			width: 180px;
+			height: 180px;
+		}
+		.app-tips{
+			margin-top: 15px;
+		}
+		.close-download{
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			font-size: 14px;
+			color: #ababab;
+			cursor: pointer;
+			&:hover{
+				color: @brand-primary;
+			}
+		}
+	}
+}
+// 登录模式
+// .login-mode{
+// 	height: .65rem;
+// 	line-height: .65rem;
+// 	padding-left: .28rem;
+// 	padding-right: .28rem;
+// 	margin-bottom: .15rem;
+// 	display: flex;
+// 	.login-item{
+// 		width: 100%;
+// 		text-align: center;
+// 		font-size: .2rem;
+// 		font-weight: bold;
+// 		border-bottom: 1px solid #dcdcdc;
+// 	}
+// }
+// 登录模式
+.login-mode{
+	// height: 1.35rem;
+	padding-left: 108px;
+	padding-right: 108px;
+	// margin-bottom: 15px;
+	display: flex;
+	.login-item{
+		// width: 50%;
+		flex: 1;
+		text-align: left;
+		font-size: 18px;
+		padding: 168px 0 22px;
+		font-weight: bold;
+		// border-bottom: 1px solid #dcdcdc;
+		// cursor: pointer;
+		position: relative;
+		// text-align: center;
+		&.cur{
+			color: @brand-primary;
+			font-weight: bold;
+			border-bottom: 1px solid @brand-primary;
+			&::before{
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 50%;
+				padding: .28em;
+				background: #fff;
+				border-width: 1px;
+				border-style: solid;
+				border-color: inherit;
+				border-right: 0;
+				border-bottom: 0;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				margin-left: -5px;
+			}
+		}
+	}
+}
+
+// 装饰图
+.decorate-img{
+	width: 490px;
+	height: 460px;
+	position: absolute;
+	right: 126px;
+	top: 50%;
+	transform: translate(0, -50%);
+	background: url(../../../images/login-box-bg.png);
+}
+// 响应式处理
+@media screen and (max-width: 1440px){
+	.login-wrapper{
+		height: 4rem;
+	}
+	.loginBox-wrapper{
+		margin-bottom: .3rem;
+		height: 4.22rem;
+	}
+	.loginBox{
+		height: 4.22rem;
+	}
+	.login-wrapper-inner{
+		margin-top: .3rem;
+	}
+	.login-mode {
+		height: .9rem;
+		.login-item{
+			padding-top: .45rem;
+		}
+	}
+}

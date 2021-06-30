@@ -63,14 +63,14 @@ class LineBarChart extends BaseChart {
   getSeriesOption() {
     let series = []
     this.series.forEach(item => {
-      let {list, ...otherParams} = item
+      let {data, ...otherParams} = item
       let sery = {
         data: [],
         symbolSize: 10,
         symbol: 'circle',
         ...otherParams,
       }
-      list.forEach(subItem => {
+      data.forEach(subItem => {
         if (typeof subItem.value === 'object') {//有更多的配置项
           let {value, ...otherParams} = subItem.value
           sery.data.push({
@@ -85,7 +85,8 @@ class LineBarChart extends BaseChart {
       })
       if (item.markLine) {//如果markline存在，
         sery.markLine = {
-          data: this.getMarkLineOption(item.markLine)
+          data: this.getMarkLineOption(item.markLine),
+          ...item.markLineOption
         }
       }
       series.push(sery)

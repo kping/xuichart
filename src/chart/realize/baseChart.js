@@ -51,8 +51,8 @@ class BaseChart {
             type: 'category',
             data: [],
         };
-        this.series[0].list.forEach(item => {
-            xAxis.data.push(item.time);
+        this.series[0].data.forEach(item => {
+            xAxis.data.push(item.name);
         });
         if (this.options.xAxis) {
             xAxis = {

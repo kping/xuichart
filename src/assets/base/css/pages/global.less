@@ -1,0 +1,63 @@
+// 引入所有全局组件
+@import "variables.less";
+@import "component/mixins.less";
+@import "modular/sys-mixins.less";
+
+html{
+    font-size: 625%;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-size: .14rem;
+    background: #eceef9;
+}
+a{
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+}
+a,input,button{
+    outline:0 none !important; 
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+       -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+input::-ms-clear {
+    display: none;
+    width : 0;
+    height: 0;
+}
+textarea{
+    resize: none;
+}
+.responseImg{
+	// width: 100%; 
+	height: auto;
+	max-width: 100%;
+}
+.disabled{
+	opacity: 0.4;
+	cursor: default!important;
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	a{
+		cursor: default;
+	}
+}
+.ellipsis-basic{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-ellipsis{
+    .ellipsis-basic;
+    width: 98%;
+}

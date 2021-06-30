@@ -1,0 +1,62 @@
+// 系统整体布局
+.c-wrapper{
+    height: 100%;
+    background-size: cover;
+}
+.c-main{
+    // display: flex;
+}
+// 固定布局
+.fix-width.fix-width{
+    width: 12rem;
+    margin: 0 auto;
+    padding: 0;
+}
+// 主导航
+.c-main-nav-wrapper{
+    height: @c-main-nav-wrapper;
+    box-sizing: border-box;
+}
+// 主体
+.c-content-wrapper, .c-map-wrapper{
+    position: relative;
+    margin-left: 220px;
+    // flex: auto;
+    min-height: calc(~'100vh' - @c-top-bar);
+    -webkit-transition: margin-left .3s;
+    transition: margin-left .3s;
+    box-sizing: border-box;
+    padding: 15px;
+    > .inner{
+        padding: 15px;
+    }
+    &.full{
+        margin-left: 0;
+    }
+}
+.c-map-wrapper{
+    padding: 0;
+    overflow: hidden;
+    .map-container{
+        min-height: calc(~'100vh' - @c-top-bar);
+    }
+}
+// 拥有版权的布局
+.has-footer{
+    .c-content-wrapper{
+        min-height: calc(~'100vh' - @c-top-bar*2);
+    }
+}
+.c-footer{
+    height: @c-top-bar;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgb(61 119 180 / 12%), 0 8px 16px 0 rgb(91 139 199 / 24%);
+    // 版权
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: rgba(0,0,0,.45);
+    }
+}

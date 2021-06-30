@@ -1,0 +1,137 @@
+// 头部副导航菜单
+.c-header-nav{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	> li{
+		float: left;
+		margin-left: .1rem;
+		position: relative;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		&:before{
+			content: "";
+			position: absolute;
+			background: #efefef;
+			width: 1px;
+			height: .2rem;
+			left: .02rem;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+		&:first-child{
+			&:before{
+				display: none;
+			}
+		}
+		&:first-child{
+			a{
+				border-left: none;
+			}
+		}
+		> a{
+			padding-left: 15px;
+			color: @gray-dark;
+			display: flex;
+			align-items: center;
+			&:hover{
+				text-decoration: none;
+			}
+			.iconfont{
+				margin-right: 6px;
+				font-size: 18px;
+				vertical-align: middle;
+			}
+			.iconzhuye{
+				font-size: 22px;
+			}
+			&[href]{
+				&:hover{
+					color: @brand-primary;
+				}
+			}
+		}
+	}
+}
+// 拥有子菜单
+.has-sub-nav{
+	.popover{
+    top: .4rem;
+		left: 50%;
+		transform: translate(-50%,0);
+		max-width: inherit;
+		border-radius: 3px;
+		&.bottom{
+			> .arrow{
+				// border-width: 8px;
+				margin-left: -12px;
+				top: -11px;
+				&:after{
+					top: 3px;
+					margin-left: -9px;
+					// border-width: 8px;
+				}
+			}
+		}
+	}
+	&:hover{
+		.popover{
+			display: block;
+		}
+	}
+	.select-city-wrapper{
+		width: 4.9rem;
+	}
+	.sys-wrapper{
+		width: 2.5rem;
+		.sys-list-item{
+			width: 50%;
+		}
+	}
+	.set-wrapper{
+		width: 1.5rem;
+		.iconfont{
+			font-size: .18rem;
+			margin-right: .06rem;
+			color: @brand-info;
+		}
+		.sys-list-item{
+			a{
+				padding-left: .15rem;
+			}
+		}
+	}
+	.sys-list{
+		display: flex;
+		margin: -2px -14px;
+	}
+	.sys-list-item{
+		width: 100%;
+		a{
+			display: flex;
+			align-items: center;
+			color: @gray-dark;
+			line-height: 36px;
+			padding: 0 15px 0 20px;
+			&:hover{
+				background: #f5f7fa;
+				color: @brand-primary;
+			}
+		}
+		&:not(:last-child){
+			border-right: 1px solid #dcdfe6;
+		}
+	}
+	.sys-list-other{
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 15px;
+			right: 15px;
+			height: 1px;
+			background: #dcdfe6;
+		}
+	}
+}
