@@ -46,7 +46,7 @@
           {
             index: '4',
             icon: 'el-icon-sell',
-            name: '酷炫效果图1',
+            name: '酷炫效果图',
             path: '/main/cool',
           },
         ],
