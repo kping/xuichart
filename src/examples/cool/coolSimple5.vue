@@ -27,12 +27,12 @@
           },
           "legend":{
             "data":[
-              "基本农田",
-              "水保林",
-              "经果林",
-              "种草",
-              "封育治理",
-              "其它"
+              "PM₂.₅",
+              "PM₁₀",
+              "SO₂",
+              "NO₂",
+              "CO",
+              "O₃"
             ],
             "bottom":10,
             "left":"center",
@@ -53,7 +53,7 @@
               "2017",
               "2018",
               "2019",
-              "2020(预计)"
+              "2020"
             ],
             "axisLabel":{
               "textStyle":{
@@ -136,7 +136,7 @@
               ]
             },
             {
-              "name":"基本农田",
+              "name":"PM₂.₅",
               "type":"line",
               "smooth":0.6,
               "lineStyle":{
@@ -176,7 +176,7 @@
               ]
             },
             {
-              "name":"水保林",
+              "name":"PM₁₀",
               "type":"line",
               "smooth":0.6,
               "lineStyle":{
@@ -216,7 +216,7 @@
               ]
             },
             {
-              "name":"经果林",
+              "name":"SO₂",
               "type":"line",
               "smooth":0.6,
               "lineStyle":{
@@ -256,7 +256,7 @@
               ]
             },
             {
-              "name":"种草",
+              "name":"NO₂",
               "type":"line",
               "smooth":0.6,
               "lineStyle":{
@@ -296,7 +296,7 @@
               ]
             },
             {
-              "name":"封育治理",
+              "name":"CO",
               "type":"line",
               "smooth":0.6,
               "lineStyle":{
@@ -336,7 +336,7 @@
               ]
             },
             {
-              "name":"其它",
+              "name":"O₃",
               "type":"line",
               "smooth":0.6,
               "lineStyle":{

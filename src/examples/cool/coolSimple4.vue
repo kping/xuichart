@@ -6,8 +6,8 @@
           <div>
             <div class="br"></div>
           </div>
-          <p class="qdjh-name">铀</p>
-          <p class="item-title"><span> 誉为“中国铀都” </span></p></div>
+          <p class="qdjh-name">A</p>
+          <p class="item-title"><span> AAAAA </span></p></div>
       </div>
       <div class="item select item2"><img :src="img2"
                                           class="activeImg">
@@ -15,50 +15,48 @@
           <div>
             <div class="br"></div>
           </div>
-          <p class="qdjh-name">铜</p>
-          <p class="item-title"><span> 储量占全国
-近40% </span></p></div>
+          <p class="qdjh-name">B</p>
+          <p class="item-title"><span> BBBBB </span></p></div>
       </div>
       <div class="item item3"><img :src="img3" class="">
         <div class="line">
           <div>
             <div class="br"></div>
           </div>
-          <p class="qdjh-name">钨</p>
-          <p class="item-title"><span> 誉为“世界钨都” </span></p></div>
+          <p class="qdjh-name">C</p>
+          <p class="item-title"><span> CCCCC </span></p></div>
       </div>
       <div class="item item4"><img :src="img4" class=""/>
         <div class="line">
           <div>
             <div class="br"></div>
           </div>
-          <p class="qdjh-name">稀土</p>
-          <p class="item-title"><span> 誉为“稀土王国” </span></p></div>
+          <p class="qdjh-name">D</p>
+          <p class="item-title"><span> DDDDDD </span></p></div>
       </div>
       <div class="item item5"><img :src="img5" class="">
         <div class="line">
           <div>
             <div class="br"></div>
           </div>
-          <p class="qdjh-name">钽铌</p>
-          <p class="item-title"><span> 资源储量
-居全国第一 </span></p></div>
+          <p class="qdjh-name">E</p>
+          <p class="item-title"><span> EEEEEE </span></p></div>
       </div>
       <div class="item item6"><img :src="img6" class="">
         <div class="line">
           <div>
             <div class="br"></div>
           </div>
-          <p class="qdjh-name">金</p>
-          <p class="item-title"><span> 探明储量居全国第二 </span></p></div>
+          <p class="qdjh-name">F</p>
+          <p class="item-title"><span> FFFFFF </span></p></div>
       </div>
       <div class="item item7"><img :src="img7" class="">
         <div class="line">
           <div>
             <div class="br"></div>
           </div>
-          <p class="qdjh-name">银</p>
-          <p class="item-title"><span> 探明储量居全国第一 </span></p></div>
+          <p class="qdjh-name">G</p>
+          <p class="item-title"><span> GGGGGG </span></p></div>
       </div>
     </div>
   </div>

@@ -48,7 +48,7 @@
         }, {border: "rgba(255, 255, 255, 1)", start: "rgba(245,59,101,1)", end: "rgba(243,70,110,1)"}];
         return {
           title: {
-            text: '"两品一标"农产品数量',
+            text: 'Echarts三维图示例',
             left: "120",
             backgroundColor: r({start: "rgba(16,74,85,0.1)", end: "rgba(16,74,85,0.33)"}),
             borderRadius: 4,
@@ -58,7 +58,7 @@
           grid: {left: 10, top: 70, bottom: 40, right: 10, containLabel: !0},
           tooltip: {trigger: "axis", formatter: "{b} : {c}", axisPointer: {type: "shadow"}},
           xAxis: {
-            data: ["2016", "2017", "2018", "2019", "2020(预计)"],
+            data: ["2016", "2017", "2018", "2019", "2020"],
             axisLine: {show: !1, lineStyle: {color: "#3eb2e8"}},
             axisTick: {show: !1},
             axisLabel: {interval: 0, textStyle: {color: "#fff"}},

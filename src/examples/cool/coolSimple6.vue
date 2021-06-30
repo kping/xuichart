@@ -63,51 +63,51 @@
               "inverse":false,
               "data":[
                 {
-                  "name":"上饶市",
+                  "name":"衡阳市",
                   "value":90.91
                 },
                 {
-                  "name":"抚州市",
+                  "name":"株洲市",
                   "value":100
                 },
                 {
-                  "name":"宜春市",
+                  "name":"常德市",
                   "value":100
                 },
                 {
-                  "name":"吉安市",
+                  "name":"郴州市",
                   "value":100
                 },
                 {
-                  "name":"赣州市",
+                  "name":"益阳市",
                   "value":100
                 },
                 {
-                  "name":"鹰潭市",
+                  "name":"娄底市",
                   "value":100
                 },
                 {
-                  "name":"新余市",
+                  "name":"长沙市",
                   "value":75
                 },
                 {
-                  "name":"九江市",
+                  "name":"耒阳市",
                   "value":88.89
                 },
                 {
-                  "name":"萍乡市",
+                  "name":"上海市",
                   "value":75
                 },
                 {
-                  "name":"景德镇市",
+                  "name":"北京市",
                   "value":100
                 },
                 {
-                  "name":"南昌市",
+                  "name":"天津市",
                   "value":88.89
                 },
                 {
-                  "name":"江西省",
+                  "name":"湖南省",
                   "value":93.33
                 }
               ],
@@ -163,51 +163,51 @@
               },
               "data":[
                 {
-                  "name":"上饶市",
+                  "name":"衡阳市",
                   "value":90.91
                 },
                 {
-                  "name":"抚州市",
+                  "name":"株洲市",
                   "value":100
                 },
                 {
-                  "name":"宜春市",
+                  "name":"常德市",
                   "value":100
                 },
                 {
-                  "name":"吉安市",
+                  "name":"郴州市",
                   "value":100
                 },
                 {
-                  "name":"赣州市",
+                  "name":"益阳市",
                   "value":100
                 },
                 {
-                  "name":"鹰潭市",
+                  "name":"娄底市",
                   "value":100
                 },
                 {
-                  "name":"新余市",
+                  "name":"长沙市",
                   "value":75
                 },
                 {
-                  "name":"九江市",
+                  "name":"耒阳市",
                   "value":88.89
                 },
                 {
-                  "name":"萍乡市",
+                  "name":"上海市",
                   "value":75
                 },
                 {
-                  "name":"景德镇市",
+                  "name":"北京市",
                   "value":100
                 },
                 {
-                  "name":"南昌市",
+                  "name":"天津市",
                   "value":88.89
                 },
                 {
-                  "name":"江西省",
+                  "name":"湖南省",
                   "value":93.33
                 }
               ],

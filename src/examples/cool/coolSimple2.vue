@@ -42,7 +42,7 @@
             x: "center",
             itemWidth: 11,
             itemHeight: 2,
-            data: [{name: "单位GDP能耗", icon: "rect"}, {name: "下降率", icon: "rect"}]
+            data: [{name: "GDP", icon: "rect"}, {name: "下降率", icon: "rect"}]
           },
           xAxis: [{
             type: "category",
@@ -53,7 +53,7 @@
           }],
           yAxis: [{
             type: "value",
-            name: "单位：吨标准煤",
+            name: "单位：吨",
             nameTextStyle: {color: "rgba(167,167,167,1)", fontSize: 12, padding: [0, 0, 0, 20]},
             axisLine: {show: !1},
             axisLabel: {color: "rgba(255,255,255,1)", fontSize: 14},
@@ -68,7 +68,7 @@
             axisTick: {show: !1},
             splitLine: {show: !1}
           }],
-          series: [{name: "单位GDP能耗", type: "bar", barWidth: 20, data: e, z: 10}, {
+          series: [{name: "GDP", type: "bar", barWidth: 20, data: e, z: 10}, {
             name: "下降率",
             type: "line",
             smooth: .6,
