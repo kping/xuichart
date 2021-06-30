@@ -10,3 +10,6 @@
 
 ![image](https://github.com/kping/xuichart/blob/main/public/img/cool3.PNG)
 
+
+
+[demo地址](https://kping.github.io/xuichart)
